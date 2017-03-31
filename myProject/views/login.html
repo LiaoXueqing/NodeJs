@@ -1,0 +1,31 @@
+<% include header.html %>
+<div style="width:100%;padding:10px 20px;border:1px solid #555;background-color: aliceblue">
+    <div class="container-fluid">
+        <form class="form-horizontal" method="post" action="/doLogin">
+            <fieldset>
+                <legend>用户登陆</legend>
+                <%- message %>
+
+                <div class="control-group">
+                    <label class="control-label" for="username">用户名</label>
+                    <div class="controls">
+                        <input type="text" class="input-xlarge" id="username" name="username">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="password">密码</label>
+                    <div class="controls">
+                        <input type="password" class="input-xlarge" id="password" name="password">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">登陆</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <p><a href="/">首页</a></p>
+    </div>
+
+</div>
+<% include footer.html %>

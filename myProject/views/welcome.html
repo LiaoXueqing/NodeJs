@@ -1,0 +1,14 @@
+<% include header.html %>
+
+    <div style="width:100%;padding:10px 20px;border:1px solid #555;background-color: aliceblue">
+       <p>get session value:</p>
+        <%- session.user.username %>
+        <br/>
+        <%- session.user.username %>
+        <br/>
+        <%- user.username %>
+        <div>欢迎进入雪雪大人的node程序</div>
+        <p><a href="/logout">退出</a></p>
+    </div>
+
+<% include footer.html %>
